@@ -1,7 +1,0 @@
-select 
-EmployeeKey,
-CONCAT(firstname, ' ', lastname) as 'FullName',
-Title,
-Gender,
-DepartmentName
-from DimEmployee

@@ -1,0 +1,29 @@
+CREATE DATABASE db_Biblioteca
+ON PRIMARY (
+NAME = db_Biblioteca, 
+FILENAME='C:\Users\leand\OneDrive\Documentos\GitHub\SQL\SQL\db_Biblioteca.MDF',
+size=6MB,
+MAXSIZE=20MB,
+FILEGROWTH=10%
+)
+
+============================================================================================
+
+O comando USE instrui o SGBDR a utilizar o banco de dados especifico para rodar os comandos
+
+sintaxe:
+
+USE nome_banco_de_dados
+=============================================================================================
+sp_helpdb
+
+Informa o tamanho, taxa de crescimento, e local do banco de dados
+
+sp_helpdb nome_banco_de_dados
+
+=================================================================================================
+
+--db_Biblioteca (comentário) #python
+
+
+

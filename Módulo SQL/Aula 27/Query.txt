@@ -1,7 +1,0 @@
-select top 5
-StoreName,
-[Status],
-EmployeeCount
-from DimStore
-where [Status]='On'
-order by EmployeeCount desc

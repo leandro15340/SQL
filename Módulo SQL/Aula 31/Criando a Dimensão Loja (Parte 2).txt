@@ -1,9 +1,0 @@
-select
-Lojas.StoreKey,
-Lojas.StoreName,
-lojas.StoreType,
-lojas.[Status],
-Geografia.RegionCountryName as 'Country',
-geografia.ContinentName as 'Continent'
-from DimStore Lojas
-left join DimGeography Geografia on Lojas.GeographyKey=Geografia.GeographyKey
