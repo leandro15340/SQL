@@ -1,0 +1,3 @@
+USE banco_de_dados
+
+Seleciona o banco de dados que você deseja realizar query, análise, etc.

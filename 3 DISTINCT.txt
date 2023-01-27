@@ -1,0 +1,22 @@
+→         →       →    COMANDO DISTINCT ←     ←     ←
+===============================================================================
+
+É utilizada quando queremos omitir os dados duplicados de uma tabela
+retorne apenas os dados unicos
+-------------------------------------------------------------------------------
+
+SELECT DISTINCT coluna1, coluna2
+FROM Tabela
+
+SELECT FirstName FROM person.person (total de linhas 19.972)
+SELECT DISTINCT FirstName FROM person.person (removendo duplicatas, total 1018)
+
+--------------------------------------------------------------------------------
+Exercicio 2:
+Quantos sobrenomes unicos temos na tabela person.person
+
+R: SELECT LastName FROM person.person  (total de linhas 19.972)
+R: SELECT DISTINCT LastName FROM person.person (total de linhas 1.206)
+
+==================================================================================
+

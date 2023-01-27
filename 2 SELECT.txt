@@ -1,0 +1,32 @@
+→     →     →       COMANDO SELECT SELECT     ←     ←      ←
+
+==================================================================
+Select | Selecione uma coluna ou mais, até mesmo todas.
+
+SELECT coluna1, coluna2
+FROM nome_da_tabela
+
+===================================================================
+
+SELECT *
+FROM tabela
+
+SELECT * (Significa que retorne todas as colunas do banco de dados)
+
+=====================================================================
+
+→     →     →       Filtrando Informação     ←     ←      ←
+
+SELECT Title FROM person.person
+----------------------------------
+SELECT * FROM person.EmailAddress
+
+======================================================================
+
+Exercício:
+
+A equipe de MARKETING solicitou o nome e sobre nome!
+
+R: SELECT FirstName, LastName FROM Person.Person
+
+======================================================================

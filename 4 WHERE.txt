@@ -1,0 +1,87 @@
+→ → → WHERE ←←←
+
+SELECT Extrair dados de uma tabela por completa
+
+Agora caso eu queira extrair X informação dessa tabela utilizamos o WHERE
+
+ex: Na tabela NOME, procura por leandro Where
+
+===========================================================================
+
+SELECT nome_da_coluna, ultima_coluna 
+FROM nome_da_tabela
+WHERE condição
+
+
+= IGUAL
+> MAIOR
+< MENOR
+>= MAIOR QUE OU IGUAL
+<= MENOR QUE OU IGUAL
+<> DIFERENTE DE 
+AND OPERADOR LOGICO E
+OR OPERADOR LOGICO OU
+
+============================================================================
+
+SELECT *
+FROM Person.Person
+WHERE LastName = 'miller'
+------------------------------------
+SELECT *
+FROM Person.Person
+WHERE LastName = 'miller'
+--------------------------------------------
+(Seleciona todas as colunas da tabela Person.Person onde na tabela (Lastname)
+sobrenome seja = 'miller')
+-------------------------------------------------------
+SELECT *
+FROM Person.Person
+WHERE LastName = 'miller' and FirstName = 'anna'
+----------------------------------------------------------------
+(Seleciona todas as colunas da tabela Person.Person onde na tabela (Lastname)
+sobrenome seja = 'miller' and (e) o primeiro nome seja 'anna'
+------------------------------------------------------------------------------
+
+SELECT *
+FROM Production.Product
+WHERE color = 'blue' or color = 'black'
+
+Seleciona todas as colunas da tabela Production.Product e na tabela color
+me retorne o que é azul ou preto
+===============================================================================
+
+SELECT *
+FROM Production.Product
+WHERE ListPrice > 1500
+
+Seleciona todas as colunas da tabela Production.Product e na tabela ListPrice
+me retorne produtos maiores que 1500
+
+===============================================================================
+SELECT *
+FROM Production.Product
+WHERE ListPrice > 1500 and ListPrice < 5000
+
+Seleciona todas as colunas da tabela Production.Product e na tabela ListPrice
+me retorne a consulta onde os produtos é maior que 1500 e menor que 5000
+filtro de preço dos sites funciona dessa forma no banco de dados.
+
+==============================================================================
+
+SELECT *
+FROM Production.Product
+WHERE color <> 'red'
+
+Seleciona todas as colunas da tabela Production.Product e na tabela color
+me retorne color que seja diferente de 'red'/vermelho
+
+=============================================================================
+
+DESAFIO:
+
+A equipe de produção de produtos, precisa do nome de todas as peças que pesam mais que 500kg mas nao mais que 700kg para inspeção
+peso -- wheigt
+
+SELECT * FROM Production.Product WHERE Weight > 500 and Weight <= 700
+
